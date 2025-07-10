@@ -1,0 +1,5 @@
+deepfake_venv
+*.sh
+jordans_notes.txt
+test.jl
+.env
