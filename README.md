@@ -14,3 +14,4 @@ What we need to implement:
 - Create demonstration system; make a fancy UI with lovable and allow users to record a short audio snippet, have the model give its prediction and confidence, and then generate a deepfake version of the short audio snippet and have the model predict that. 
     - Could be a two device system, to definitively prove we are not hardcoding the result.
     - Keep the demo under 2 minutes.
+    - Need to deploy
