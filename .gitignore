@@ -10,3 +10,4 @@ release_in_the_wild
 *.mp3
 *.wav
 *.flacc
+__pycache__

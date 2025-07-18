@@ -1,0 +1,1 @@
+web: gunicorn deepfake_detector_API:app
