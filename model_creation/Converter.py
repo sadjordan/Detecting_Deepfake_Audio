@@ -5,15 +5,14 @@ import numpy as np
 import pandas as pd
 # import os
 # import noisereduce as nr
-
-duration = 5  # seconds
+#recordings/maybe not.wav
 fs = 44100
-input_wav = "/Users/jordan/.cache/kagglehub/datasets/birdy654/deep-voice-deepfake-voice-recognition/versions/2/KAGGLE/AUDIO/REAL/taylor-original.wav"
-output_csv = "recordings/output_taylor_real.csv"
+input_wav = "recordings/FULL SPEECH_ President Joe Biden gives address after dropping out of 2024 election.mp3"
+output_csv = "audio_csv/joe_biden_dropout_real"
 
 y, sr = librosa.load(input_wav, sr=fs)
 
-window_size = fs  # 1 second
+window_size = int(fs * 0.2)  # 0.2 second
 num_windows = int(np.floor(len(y) / window_size))
 
 rows = []
@@ -35,5 +34,6 @@ for i in range(num_windows):
     rows.append(features)
 
 df = pd.DataFrame(rows)
+df["LABEL"] = 1
 df.to_csv(output_csv, index=False)
 print(f"Saved features as {output_csv}")

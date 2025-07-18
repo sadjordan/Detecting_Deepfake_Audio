@@ -7,3 +7,6 @@ recordings
 audio
 audio_csv
 release_in_the_wild
+*.mp3
+*.wav
+*.flacc

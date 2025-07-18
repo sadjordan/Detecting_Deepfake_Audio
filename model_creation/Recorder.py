@@ -45,9 +45,9 @@ print("Saved as output.wav")
 y, sr = librosa.load(output_wav, sr=fs)
 
 # Reduce noise
-y = nr.reduce_noise(y=y, sr=sr)
+# y = nr.reduce_noise(y=y, sr=sr)
 
-window_size = int(fs * 0.1)  # 0.1 secs per row
+window_size = int(fs * 0.2)  # 0.1 secs per row
 num_windows = int(np.floor(len(y) / window_size))
 
 rows = []
