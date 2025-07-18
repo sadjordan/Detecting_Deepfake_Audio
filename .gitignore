@@ -3,3 +3,11 @@ deepfake_venv
 jordans_notes.txt
 test.jl
 .env
+recordings
+audio
+audio_csv
+release_in_the_wild
+*.mp3
+*.wav
+*.flacc
+__pycache__
